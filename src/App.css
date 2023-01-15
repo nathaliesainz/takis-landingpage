@@ -101,5 +101,9 @@
   left: 35%;
   gap: 5px;
   cursor: pointer;
-  transition: all 300ms;
+}
+
+.App-options img:hover {
+  transform: translateY(-10px);
+  transition: 0.1s;
 }
