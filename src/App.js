@@ -10,6 +10,7 @@ import './App.css';
 function App() {
 
   const [color, setColor] = useState('white');
+  const [image, setImage] = useState([Huakamole]);
 
 
   return (
@@ -35,32 +36,44 @@ function App() {
           <button>All Products</button>
         </div>
         <div className='App-image'>
-          <img src={Huakamole} alt='Takis' height='550px' />
+          <img src={ [image] } alt='Takis' height='550px' />
         </div>
         <div className='App-options'>
           <img 
             src={Fuego} 
             alt='Takis Fuego' 
             height='90px' 
-            onClick={ () => setColor('#4E1588') }
+            onClick={ () => {
+              setColor('#4E1588');
+              setImage([Fuego]);
+            }}
            />
           <img
             src={Original}
             alt='Takis Original' 
             height='90px'
-            onClick={ () => {setColor("#00B33B")} }
+            onClick={ () => { 
+              setColor("#00B33B");
+              setImage([Original]);
+            }}
             />
           <img 
             src={Huakamole} 
             alt='Takis Huakamole' 
             height='90px' 
-            onClick={ () => {setColor("white")} }
+            onClick={ () => { 
+              setColor("white");
+              setImage([Huakamole]);
+            }}
           />
           <img 
             src={Volcano}
             alt='Takis Volcano' 
             height='90px' 
-            onClick={ () => {setColor("#F28B35")} }
+            onClick={ () => { 
+              setColor("#F28B35");
+            setImage([Volcano]); 
+          }}
           />
         </div>
       </div>

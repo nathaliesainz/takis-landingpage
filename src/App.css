@@ -89,7 +89,7 @@
 }
 
 .App-body button:hover {
-  background-color: white;
+  background-color: transparent;
   color: black;
   transition: 0.5s;
 }
