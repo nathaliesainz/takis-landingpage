@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+* {
+  font-family: 'Work Sans','Arial';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* LANDING PAGE CONTAINER */
+.App-container { 
+  height: 100vh;
+  width: 100%;
+  /* background-color: white; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* HEADER AND NAV */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.Logo {
+  margin-top: 9px;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.Logo:hover {
+  transition: scale(1.1);
+} 
+
+.App-nav {
   display: flex;
-  flex-direction: column;
+  padding-top: 5px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+.App-nav li {
+  display: inline;
+  margin: 15px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding: 6px 15px;
+  border: 2px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.App-nav li:hover {
   color: white;
+  background-color: black;
+  transition: 0.5s;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* CONTENT BODY*/
+.App-body {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  height: 85%;
+  align-items: center;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-text {
+  font-size: 40px;
+}
+
+.App-text p {
+  font-size: 25px;
+  margin-bottom: 13px;
+}
+
+.App-body button {
+  background-color: black;
+  color: white;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 1px solid black;
+}
+
+.App-body button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}
+
+.App-options {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 35%;
+  gap: 5px;
+  cursor: pointer;
+  transition: all 300ms;
 }

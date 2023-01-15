@@ -1,23 +1,70 @@
-import logo from './logo.svg';
+import { useState } from 'react'
+import Logo from '../src/img/logo.png'
+import Huakamole from '../src/img/Huakamole.png'
+import Fuego from '../src/img/Fuego.png'
+import Original from '../src/img/Original.png'
+import Volcano from '../src/img/Volcano.png'
 import './App.css';
 
+
 function App() {
+
+  const [color, setColor] = useState('red');
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="App-container" style={ { background: {color} } } >
+
+      <header className="App-header"> 
+        <nav className="App-nav">
+          <a href={App}>
+            <img src={Logo} alt='Logo' className='Logo'/>
+          </a>
+          <ul>
+            <li>Home</li>
+            <li>Our Products</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
       </header>
+
+      <div className="App-body">
+        <div className='App-text'>
+          <h1>Takis</h1>
+          <p>Do you have what it takes to handle the<br/> intensity of Takis® rolled tortilla chips?</p>
+          <button>All Products</button>
+        </div>
+        <div className='App-image'>
+          <img src={Huakamole} alt='Takis Huakamole' height='550px' />
+        </div>
+        <div className='App-options'>
+          <img 
+            src={Fuego} 
+            alt='Takis Fuego' 
+            height='90px' 
+            onClick={ () => setColor('#4E1588') }
+           />
+          <img
+            src={Original}
+            alt='Takis Original' 
+            height='90px'
+            onClick={ () => {setColor("#00B33B")} }
+            />
+          <img 
+            src={Huakamole} 
+            alt='Takis Huakamole' 
+            height='90px' 
+            onClick={ () => {setColor("white")} }
+          />
+          <img 
+            src={Volcano}
+            alt='Takis Volcano' 
+            height='90px' 
+            onClick={ () => {setColor("#F28B35")} }
+          />
+        </div>
+      </div>
+
     </div>
   );
 }
