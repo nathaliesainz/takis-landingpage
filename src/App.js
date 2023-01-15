@@ -9,11 +9,11 @@ import './App.css';
 
 function App() {
 
-  const [color, setColor] = useState('red');
+  const [color, setColor] = useState('white');
 
 
   return (
-    <div className="App-container" style={ { background: {color} } } >
+    <div className="App-container" style={ { background: [color] } } >
 
       <header className="App-header"> 
         <nav className="App-nav">
@@ -35,7 +35,7 @@ function App() {
           <button>All Products</button>
         </div>
         <div className='App-image'>
-          <img src={Huakamole} alt='Takis Huakamole' height='550px' />
+          <img src={Huakamole} alt='Takis' height='550px' />
         </div>
         <div className='App-options'>
           <img 
