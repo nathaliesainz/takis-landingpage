@@ -72,7 +72,7 @@ function App() {
             height='90px' 
             onClick={ () => { 
               setColor("#F28B35");
-            setImage([Volcano]); 
+              setImage([Volcano]);
           }}
           />
         </div>
