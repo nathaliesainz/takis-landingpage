@@ -135,12 +135,13 @@
     width: 80px;
   }
 
-  /* .Burger {
+  .Burger {
     display: flex;
-    align-items: flex-end;
+    position: absolute;
+    margin-left: 70%;
     height: 80px;
     width: 80px;
-  } */
+  }
   
   .App-nav li {
     display: none;
