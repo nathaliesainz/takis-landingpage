@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Logo from '../src/img/logo.png'
+import Burger from '../src/img/Burger.png'
 import Huakamole from '../src/img/Huakamole.png'
 import Fuego from '../src/img/Fuego.png'
 import Original from '../src/img/Original.png'
@@ -21,6 +22,7 @@ function App() {
           <a href={App}>
             <img src={Logo} alt='Logo' className='Logo'/>
           </a>
+          <img src={Burger} alt='Menu icon' className='Burger'/>
           <ul>
             <li>Home</li>
             <li>Our Products</li>
@@ -32,17 +34,19 @@ function App() {
       <div className="App-body">
         <div className='App-text'>
           <h1>Takis</h1>
-          <p>Do you have what it takes to handle the<br/> intensity of Takis® rolled tortilla chips?</p>
+          <p>Do you have what it takes to handle the <br/>
+             intensity of Takis® rolled tortilla chips?</p>
           <button>All Products</button>
         </div>
         <div className='App-image'>
-          <img src={ [image] } alt='Takis' height='550px' />
+          <img src={ [image] } alt='Takis' height='550px' className='MainImage' />
         </div>
         <div className='App-options'>
           <img 
             src={Fuego} 
             alt='Takis Fuego' 
-            height='90px' 
+            height='90px'
+            className='icon' 
             onClick={ () => {
               setColor('#4E1588');
               setImage([Fuego]);
@@ -52,6 +56,7 @@ function App() {
             src={Original}
             alt='Takis Original' 
             height='90px'
+            className='icon'
             onClick={ () => { 
               setColor("#00B33B");
               setImage([Original]);
@@ -61,6 +66,7 @@ function App() {
             src={Huakamole} 
             alt='Takis Huakamole' 
             height='90px' 
+            className='icon'
             onClick={ () => { 
               setColor("white");
               setImage([Huakamole]);
@@ -70,6 +76,7 @@ function App() {
             src={Volcano}
             alt='Takis Volcano' 
             height='90px' 
+            className='icon'
             onClick={ () => { 
               setColor("#F28B35");
               setImage([Volcano]);

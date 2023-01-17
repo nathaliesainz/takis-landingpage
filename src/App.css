@@ -11,7 +11,6 @@
 .App-container { 
   height: 100vh;
   width: 100%;
-  /* background-color: white; */
 }
 
 /* HEADER AND NAV */
@@ -53,6 +52,10 @@
   color: white;
   background-color: black;
   transition: 0.5s;
+}
+
+.Burger {
+  display: none;
 }
 
 
@@ -106,4 +109,89 @@
 .App-options img:hover {
   transform: translateY(-10px);
   transition: 0.1s;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1280px) {
+  .MainImage {
+    height: 400px;
+  }
+
+  .App-options {
+   margin: 0 0 15px -85px;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  .App-container {
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .Logo {
+    height: 80px;
+    width: 80px;
+  }
+
+  /* .Burger {
+    display: flex;
+    align-items: flex-end;
+    height: 80px;
+    width: 80px;
+  } */
+  
+  .App-nav li {
+    display: none;
+  }
+
+  .App-body {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .App-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  
+  .App-text p {
+    font-size: 23px;
+    margin-bottom: 13px;
+  }
+  
+  .App-body button {
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 12px 30px;
+  }
+
+  .App-image {
+    display: flex;
+    position: absolute;
+    margin: 35%;
+  }
+
+  .MainImage {
+    height: 350px;
+  }
+
+  .App-options {
+    display: flex;
+    position: absolute;
+    margin-left: -20px;
+  }
+
+  .icon {
+    height: 70px;
+    margin: 0 0 0 10px;
+  }
+
 }
