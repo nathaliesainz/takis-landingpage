@@ -141,6 +141,7 @@
     margin-left: 70%;
     height: 80px;
     width: 80px;
+    cursor: pointer;
   }
   
   .App-nav li {
@@ -195,4 +196,37 @@
     margin: 0 0 0 10px;
   }
 
+}
+
+@media screen and (max-width: 500px) {
+  .App-text {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  
+  .App-text p {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+  
+  .App-body button {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 12px 30px;
+  }
+  
+  .App-image {
+    display: flex;
+    position: absolute;
+    margin: 45%;
+  }
+  
+  .MainImage {
+    height: 200px;
+  }
+
+  .App-options {
+    margin-left: -80px;
+  }
 }
