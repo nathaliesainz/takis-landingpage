@@ -46,12 +46,12 @@
   border: 2px solid black;
   border-radius: 20px;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .App-nav li:hover {
   color: white;
   background-color: black;
-  transition: 0.5s;
 }
 
 .Burger {
@@ -89,12 +89,13 @@
   text-transform: uppercase;
   cursor: pointer;
   border-radius: 1px solid black;
+  transition: 0.5s;
 }
 
 .App-body button:hover {
   background-color: transparent;
   color: black;
-  transition: 0.5s;
+  
 }
 
 .App-options {
@@ -104,11 +105,11 @@
   left: 35%;
   gap: 5px;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .App-options img:hover {
   transform: translateY(-10px);
-  transition: 0.1s;
 }
 
 /* RESPONSIVE */
