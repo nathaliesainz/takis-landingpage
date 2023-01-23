@@ -99,14 +99,18 @@
 }
 
 .App-options {
-    bottom: 0;
-    cursor: pointer;
-    gap: 10px;
-    position: absolute;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  bottom: 0;
+  cursor: pointer;
+  gap: 10px;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-options img {
+  transition: 0.2s;
 }
 
 .App-options img:hover {
@@ -201,13 +205,18 @@
 }
 
 @media screen and (max-width: 500px) {
+  .Burger {
+    height: 65px;
+    width: 65px;
+  }
+  
   .App-text {
     font-size: 20px;
-    margin-top: 40px;
+    margin-top: 50px;
   }
   
   .App-text p {
-    font-size: 20px;
+    font-size: 19px;
     margin-bottom: 18px;
   }
   
@@ -221,14 +230,14 @@
   .App-image {
     display: flex;
     position: absolute;
-    margin: 45%;
+    margin: 80%;
   }
   
   .MainImage {
     height: 200px;
   }
 
-  .App-options {
+  /* .App-options {
     margin-left: -80px;
-  }
+  } */
 }
